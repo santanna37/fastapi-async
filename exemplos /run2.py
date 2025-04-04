@@ -11,13 +11,6 @@ DATABASE_URL = "sqlite:///./schema.db"
 database = databases.Database(DATABASE_URL)
 
 
-#Descrever tabelas 
-metadata = MetaData()
-PESSOA = Table(
-    "pessoas", metadata,
-    Column("id", Integer, primary_key=True),
-    Column("name", String)
-)
 
 
 # Fazer query
